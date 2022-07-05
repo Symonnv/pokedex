@@ -39,7 +39,7 @@ h1 {
 
 .card {
   list-style: none;
-  padding: 2rem;
+  padding: 1.6rem;
   color: #222;
   text-align: center;
   border-radius: 2rem;
@@ -49,14 +49,14 @@ h1 {
 .card::after {
   content: "";
   display: block;
-  width: 50%;
-  height: 50%;
-  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   background-color: #fff;
   opacity: 0.7;
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 22%;
+  left: 18%;
 }
 
 header {
@@ -67,14 +67,15 @@ header {
 
 header .card-title {
   text-transform: capitalize;
-  margin-bottom: 0px;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: normal;
   position: relative;
   z-index: 2;
+  margin-bottom: .8rem;
 }
 
 header .card-subtitle {
+  font-size: 1.6rem;
   color: #666;
   font-weight: lighter;
   position: relative;
@@ -82,34 +83,45 @@ header .card-subtitle {
 }
 
 .card-image {
-  height: 180px;
+  height: 240px;
   position: relative;
   z-index: 2;
+
+  margin-top: .4rem;
 }
 
 .card-information {
+  width: 95%;
+  
+  margin: 0 auto;
+  height: 32px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  
 }
 
-.card-information .health-points {
-  width: 100px;
-  height: 80px;
-
+.card-information > p{
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 2.4rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.card-information .health-points p {
-  margin-bottom: 1.2rem;
+.card-information p{
+  padding: .2rem .4rem;
+  background-color: #bffcc3;
+  border-radius: .8rem;
 }
 
-.card-information .other-points {
-  width: 80px;
+.card-information .other{
+  padding: .4rem 0.2rem;
+  background-color: #fff;
+  opacity: 0.7;
+  display: flex;
+  gap: .8rem;
 }
 
 .steel {
