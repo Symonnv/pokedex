@@ -19,7 +19,7 @@ const fetchPokemon = () => {
       accumutator += `
       <li class="card ${types[0]}">
         <header>
-          <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
+          <h2 class="card-title">${pokemon.name}</h2>
           <p class="card-subtitle">${types.join(" | ")}</p>
         </header>
         <img class="card-image" alt="${
