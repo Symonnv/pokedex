@@ -1,0 +1,25 @@
+
+:root {
+  /* main colors */
+  --bg-color: #262835;
+  --title-color: #fff;
+  --text-color: #222;
+  /* card colors */
+  --steel: #f4f4f4;
+  --fire: #fddfdf;
+  --grass: #defde0;
+  --electric: #f8f0c9;
+  --water: #def3fd; /* water and ice */
+  --ground: #f4e7da;
+  --rock: #d5d5d4;
+  --fairy: #fceaff;
+  --poison: #98d7a5;
+  --bug: #f8d5a3;
+  --dragon: #97b3e6;
+  --psychic: #eaeda1;
+  --flying: #f5f5f5;
+  --fighting: #e6e0d4;
+  --dark: #857f92;
+  --ghost: #7883a1;
+  --normal: #f5f5f5;
+}
