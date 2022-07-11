@@ -3,7 +3,7 @@ const fetchPokemon = () => {
 
   const pokemonPromises = []
 
-  for (let i = 1; i <= 200; i++) {
+  for (let i = 1; i <= 174; i++) {
     pokemonPromises.push(
       fetch(getPokemonUrl(i)).then(response => response.json())
     )

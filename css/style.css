@@ -48,13 +48,62 @@ body {
   padding-inline: 3rem;
 }
 
-h1 {
-  text-align: center;
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--title-color);
+#title-logo {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
 
-  margin-bottom: 3rem;
+.search {
+  display: flex;
+  justify-content: center;
+  margin-block: 4rem;
+}
+
+.search input {
+  width: 100%;
+  height: 4rem;
+  max-width: 54rem;
+
+  font-size: 1.8rem;
+  color: var(--title-color);
+  background: rgba(255, 255, 255, 0.2);
+
+  padding-left: 2rem;
+
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+
+.search input::placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-left: 2rem;
+}
+
+.search button {
+  height: 4rem;
+  padding-inline: 1rem;
+
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: -40px;
+
+  cursor: pointer;
+}
+
+.search .filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+
+  color: #fff;
+  border: 1px solid #fff;
+
+  cursor: pointer;
 }
 
 .pokedex {
@@ -137,7 +186,7 @@ header .card-subtitle {
 
 .card-information p {
   padding: 0.2rem 0.4rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.08);
   border-radius: 0.8rem;
 }
 
@@ -250,11 +299,27 @@ header .card-subtitle {
     grid-template-columns: 320px;
     justify-content: center;
   }
+
+  .search input::placeholder {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .search input::placeholder {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+  }
 }
 
 @media (max-width: 340px) {
   .pokedex {
     grid-template-columns: 94vw;
     justify-content: center;
+  }
+
+  .search input::placeholder {
+    font-size: 1.4rem;
+    padding-left: 0;
   }
 }
