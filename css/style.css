@@ -19,6 +19,7 @@ body {
   max-width: 1400px;
   padding: 4rem;
   margin: 0 auto;
+  position: relative;
 
   padding-inline: 3rem;
 }
@@ -262,6 +263,53 @@ header .card-subtitle {
   }
 }
 
+#paginate {
+  width: 100%;
+
+  color: var(--title-color);
+
+  margin: 3.2rem auto;
+}
+
+#paginate .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-top: 0.8rem; */
+  padding-top: 2rem;
+  gap: 1.6rem;
+}
+
+#paginate .controls div {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#paginate .controls div:not(.numbers-paginate) {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+#paginate .controls .numbers-paginate {
+  display: flex;
+  gap: 0.4rem;
+}
+
+#paginate .controls div:not(.numbers-paginate),
+#paginate .controls div.numbers-paginate div {
+  width: 40px;
+  height: 40px;
+}
+
+#paginate .controls div.numbers-paginate div:hover,
+#paginate .controls div.numbers-paginate div.active {
+  filter: opacity(4);
+}
+
 @media (max-width: 1002px) {
   .pokedex {
     grid-template-columns: repeat(2, 320px);
@@ -273,10 +321,19 @@ header .card-subtitle {
   .pokedex {
     grid-template-columns: 320px;
     justify-content: center;
+
+    padding-bottom: 4rem;
   }
 
   .search input::placeholder {
     font-size: 1.8rem;
+  }
+
+  #paginate .controls .numbers-paginate {
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 122px;
   }
 }
 
