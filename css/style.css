@@ -278,10 +278,10 @@ header .card-subtitle {
 
   /* margin-top: 0.8rem; */
   padding-top: 2rem;
-  gap: 1.6rem;
+  gap: 0.8rem;
 }
 
-#paginate .controls div {
+#paginate .controls > div:not(.numbers-paginate) {
   cursor: pointer;
 
   display: flex;
@@ -289,23 +289,31 @@ header .card-subtitle {
   justify-content: center;
 }
 
-#paginate .controls div:not(.numbers-paginate) {
+#paginate .controls > div:not(.numbers-paginate) {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 
 #paginate .controls .numbers-paginate {
   display: flex;
-  gap: 0.4rem;
+  gap: 1.6rem;
+  margin-inline: 0.8rem;
 }
 
-#paginate .controls div:not(.numbers-paginate),
-#paginate .controls div.numbers-paginate div {
+#paginate .controls .numbers-paginate div {
+  cursor: pointer;
+}
+
+#paginate .controls > div:not(.numbers-paginate) {
   width: 40px;
   height: 40px;
 }
 
-#paginate .controls div.numbers-paginate div:hover,
-#paginate .controls div.numbers-paginate div.active {
-  filter: opacity(4);
+/* #paginate .controls > div:not(.numbers-paginate):hover {
+  background-color: red;
 }
+
+#paginate .controls .numbers-paginate div:hover,
+#paginate .controls .numbers-paginate div:active {
+  color: red;
+} */
